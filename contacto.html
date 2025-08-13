@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contacto - Escribime para trabajar juntas en tus ideas.">
+  <title>Contacto | Luciana Gomez</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/images/favicon.png">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Luciana Gomez</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <section class="contact-page">
+    <div class="contact-container">
+      <div class="contact-img">
+        <img src="assets/images/contacto.jpg" alt="Contacto Luciana Gómez">
+      </div>
+
+      <div class="contact-content">
+        <h2>¡Creá conmigo!</h2>
+        <p>Completá el formulario o escribime por WhatsApp y pronto estaremos en contacto.</p>
+
+        <div class="whatsapp-highlight">
+          <span>💬</span> 
+          <a href="https://wa.me/5491122781062" target="_blank">Hablemos por WhatsApp</a>
+        </div>
+
+
+<form id="contact-form" class="contact-form">
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu correo electrónico" required>
+  <textarea name="mensaje" rows="6" placeholder="Escribí tu mensaje..." required></textarea>
+  <button type="submit" class="btn">Enviar mensaje</button>
+</form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+<footer style="background: #3b3b38; color: #fff; padding: 15px 30px;">
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+
+    <!-- Redes sociales -->
+    <div>
+      <a href="https://instagram.com/tramarevelada?igsh=aWh2MTBrZm9iOG8z" target="_blank" style="color: #cbb994; margin-right: 15px; text-decoration: none;">
+        Instagram
+      </a>
+     
+    </div>
+
+    <!-- Copyright -->
+    <small style="text-align: center;">
+      © <span id="year"></span> Luciana Gomez - Historias que conectan marcas con personas
+    </small>
+
+    <!-- Email -->
+   
+      <div>
+  <span style="color: #fff;">tramarevelada@gmail.com</span>
+</div>
+
+  </div>
+
+
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+  
+<!-- Botón WhatsApp -->
+<a href="https://wa.me/5491122781062" target="_blank" class="whatsapp-button" aria-label="WhatsApp"> 
+    <!-- Icono WhatsApp SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="28" height="28">
+        <path d="M20.52 3.48A11.79 11.79 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.19 1.6 6.02L0 24l6.17-1.62A12 12 0 1 0 20.52 3.48ZM12 21.8c-1.93 0-3.79-.5-5.43-1.45l-.39-.23-3.66.96.98-3.57-.25-.37A9.77 9.77 0 0 1 2.2 12a9.8 9.8 0 0 1 16.73-6.93A9.8 9.8 0 0 1 12 21.8Zm5.41-7.35c-.3-.15-1.78-.88-2.05-.98-.28-.1-.48-.15-.68.15-.2.3-.78.97-.95 1.17-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.6.13-.12.3-.31.45-.46.15-.15.2-.25.3-.42.1-.17.05-.32-.02-.46-.08-.15-.68-1.64-.93-2.25-.24-.58-.49-.5-.68-.5-.18 0-.37-.02-.57-.02s-.52.08-.79.38c-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.87 1.21 3.07.15.2 2.09 3.2 5.08 4.48 2.98 1.28 3.12.88 3.68.83.56-.05 1.78-.73 2.03-1.43.25-.7.25-1.3.18-1.43-.07-.13-.27-.2-.57-.35Z"/>
+    </svg>
+</a>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

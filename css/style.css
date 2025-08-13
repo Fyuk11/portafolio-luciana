@@ -135,7 +135,7 @@ p {
 .services-section {
 /* background: linear-gradient(135deg, #cbb994 0%,  #f5f0e6 100%); */
 
-background: url('../assets/images/textura-papel.jpg') center/cover no-repeat;
+background: url('../assets/images/textura-papel.webp') center/cover no-repeat;
 
   padding: 60px 0;
 }

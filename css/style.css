@@ -555,3 +555,19 @@ background: linear-gradient(135deg, #f5f0e6 0%, #cbb994 100%);
   border: 1px solid #ffcdd2;
 }
 
+/* Estructura para que el footer siempre quede abajo */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Ocupa todo el espacio libre entre el header y el footer */
+}
